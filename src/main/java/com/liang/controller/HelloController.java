@@ -14,6 +14,6 @@ public class HelloController {
 
     @RequestMapping("/hello")
     public String hello(){
-        return "hello jenkins";
+        return "hello jenkins ci! ";
     }
 }
