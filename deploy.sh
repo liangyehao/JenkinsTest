@@ -7,7 +7,9 @@ cp ./target/$APP_NAME /home/deploy/
 
 echo "stopping $APP_NAME ..."
 pid=`ps -ef | grep -w "$APP_NAME" | grep -v "grep" | awk '{print $2}'`
-if [ "$pid"=="" ];then
+echo "pid is $pid ..."
+
+if [ -z "$pid" ];then
  echo "$APP_NAME is not running..."
 else
  echo "doing kill -9 $pid"
