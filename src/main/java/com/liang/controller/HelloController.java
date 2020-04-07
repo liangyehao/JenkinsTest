@@ -14,6 +14,6 @@ public class HelloController {
 
     @RequestMapping("/hello")
     public String hello(){
-        return "hello jenkins ci!测试git push自动触发构建";
+        return "hello jenkins ci! 梁业浩，测试git push自动触发构建";
     }
 }
